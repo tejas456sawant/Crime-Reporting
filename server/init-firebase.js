@@ -1,12 +1,12 @@
 var firebaseConfig = {
-  apiKey: 'AIzaSyAxyUHCFFNprsq2Hkc1RPtjl0RX6m7XjUI',
-  authDomain: 'crime-reporting-264811.firebaseapp.com',
-  databaseURL: 'https://crime-reporting-264811.firebaseio.com',
-  projectId: 'crime-reporting-264811',
-  storageBucket: 'crime-reporting-264811.appspot.com',
-  messagingSenderId: '445407900697',
-  appId: '1:445407900697:web:e957922c600421c8dc2688',
-  measurementId: 'G-QWFD0GJ9FL',
+  apiKey: '',
+  authDomain: '',
+  databaseURL: '',
+  projectId: '',
+  storageBucket: '',
+  messagingSenderId: '',
+  appId: '',
+  measurementId: '',
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -25,7 +25,7 @@ function initMap() {
   firebase
     .database()
     .ref('SOS/')
-    .on('child_added', function (snapshot) {
+    .on('child_added', function(snapshot) {
       console.log(snapshot.val().helpInfo.coordinates);
       var coords = snapshot.val().helpInfo.coordinates;
       var latLng = new google.maps.LatLng(coords.latitude, coords.longitude);
@@ -40,7 +40,7 @@ function initMap() {
       var infowindow = new google.maps.InfoWindow({
         content: contentString,
       });
-      marker.addListener('click', function () {
+      marker.addListener('click', function() {
         infowindow.open(map, marker);
       });
     });
