@@ -1,11 +1,11 @@
-import { ToastAndroid } from 'react-native';
+import {ToastAndroid} from 'react-native';
 
 export default function(message) {
-    ToastAndroid.showWithGravityAndOffset(
-        message,
-        ToastAndroid.LONG,
-        ToastAndroid.BOTTOM,
-        25,
-        50,
-    );
+  ToastAndroid.showWithGravityAndOffset(
+    message,
+    ToastAndroid.LONG,
+    ToastAndroid.BOTTOM,
+    25,
+    50,
+  );
 }

@@ -1,12 +1,14 @@
-import React, { Component } from "react";
-import { StyleSheet, TouchableOpacity, Text } from "react-native";
-import Icon from "react-native-vector-icons/MaterialCommunityIcons";
+import React, {Component} from 'react';
+import {StyleSheet, TouchableOpacity, Text} from 'react-native';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 export default class NextButton extends Component {
   render() {
     return (
-      <TouchableOpacity style={[styles.container, this.props.style]} onPress={this.props.onPress}>
-        <Icon name="page-next-outline" style={styles.icon}></Icon>
+      <TouchableOpacity
+        style={[styles.container, this.props.style]}
+        onPress={this.props.onPress}>
+        <Icon name="page-next-outline" style={styles.icon} />
       </TouchableOpacity>
     );
   }
@@ -14,10 +16,10 @@ export default class NextButton extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#199D05",
+    backgroundColor: '#199D05',
     //flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
+    alignItems: 'center',
+    justifyContent: 'center',
     //paddingRight: 16,
     //paddingLeft: 16,
     elevation: 2,
@@ -26,18 +28,18 @@ const styles = StyleSheet.create({
     borderRadius: 100,
     shadowOffset: {
       height: 1,
-      width: 0
+      width: 0,
     },
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOpacity: 0.2,
-    shadowRadius: 1.2
+    shadowRadius: 1.2,
     //borderRadius:50,
   },
 
   icon: {
-    color: "#fff",
-    fontFamily: "Roboto",
+    color: '#fff',
+    fontFamily: 'Roboto',
     fontSize: 24,
-    alignSelf: "center"
-  }
+    alignSelf: 'center',
+  },
 });

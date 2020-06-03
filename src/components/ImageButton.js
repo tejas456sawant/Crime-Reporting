@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { StyleSheet, TouchableOpacity, Text } from "react-native";
+import React, {Component} from 'react';
+import {StyleSheet, TouchableOpacity, Text} from 'react-native';
 
 export default class ImageButton extends Component {
   render() {
@@ -13,10 +13,10 @@ export default class ImageButton extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: "#3F51B5",
-    flexDirection: "row",
-    alignItems: "center",
-    justifyContent: "center",
+    backgroundColor: '#3F51B5',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
     paddingRight: 16,
     paddingLeft: 16,
     elevation: 1,
@@ -24,17 +24,17 @@ const styles = StyleSheet.create({
     borderRadius: 2,
     shadowOffset: {
       height: 1,
-      width: 0
+      width: 0,
     },
-    shadowColor: "#000",
+    shadowColor: '#000',
     shadowOpacity: 0.35,
     shadowRadius: 5,
-    top:10,
-    right:10,
+    top: 10,
+    right: 10,
   },
   caption: {
-    color: "#fff",
+    color: '#fff',
     fontSize: 14,
-    fontFamily: "roboto-regular"
-  }
+    fontFamily: 'roboto-regular',
+  },
 });
